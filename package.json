@@ -1,0 +1,15 @@
+{
+  "name": "auto-conjuguemos",
+  "version": "1.0.0",
+  "description": "Courtesy of [a2435191](https://github.com/a2435191) for providing the basis of the script. This is an extension of the public script to make it more user-friendly.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
