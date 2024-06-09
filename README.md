@@ -32,6 +32,10 @@ if you created a conjuguemos account through the native login page, you can igno
 # example
 ![success](success.png)
 
+# tags !!!
+- conjuguemos automater
+- conjuguemos bot
+- conjuguemos homework automater
 
 
 
