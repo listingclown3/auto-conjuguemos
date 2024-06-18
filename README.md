@@ -37,5 +37,14 @@ if you created a conjuguemos account through the native login page, you can igno
 - conjuguemos bot
 - conjuguemos homework automater
 
+# website
+[test website](http://152.67.232.156:6969/conjuguemos)
+
+this is a testing website or a production environment, but will be kept on for people who do not want to self host
+
+it should be noted that if attacks are sent, I will consider taking down the site permanently, but I may install tighter security. 
+
+in any case, enjoy the free production website, it runs identical code (which hopefully won't be my downfall) and stores ZERO user data, cheers!
+
 
 
