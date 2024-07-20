@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
-const { exec } = require('node:child_process')
+const { exec } = require('child_process')
 
 const app = express()
 
