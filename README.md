@@ -11,12 +11,19 @@ Courtesy of [a2435191](https://github.com/a2435191) for providing the basis of t
 if you created a conjuguemos account through the native login page, you can ignore the above
 
 # build and use
-- Download code
-- Open in a development envrionment, VSCode, etc.
+- clone code onto a production machine
 - Make sure to have npm (node package manager) installed
-- run 'npm run start'
-- open on forwarded port : localhost, etc.
-- follow instructions
+- run **'npm run start'**
+- configure and open on **forwarded port** : [http://152.67.232.156:6969/conjuguemos](http://152.67.232.156:6969/conjuguemos), etc.
+- have fun !!!
+  * you can use tools like [pm2](https://pm2.keymetrics.io/) or [tmux](https://github.com/tmux/tmux/wiki) to run the process in the background
+
+# common issues
+- make sure **python** is installed,
+  * if your machine needs python3, etc. install it and change the execution **[exec(`python...]** in **index.js**
+  * **python** ./script/cli.py... --> **python3** ./script/cli.py...
+
+- make sure you install dependencies using -> **[npm install]**
 
 # miscellaneous
 - may break if conjuguemos backend changes
