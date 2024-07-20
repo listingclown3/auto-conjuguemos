@@ -138,7 +138,29 @@
                 if (data.error) {
                     outputElement.textContent = `Error: ${data.details}\n${data.stderr}`;
                 } else {
-                    outputElement.textContent = "INFO:root:Beginning authentication step.\nINFO:root:Authentication step complete.\nINFO:root:Beginning score addition step.\nINFO:root:Score added.\n\n ____  _   _  ____ ____ _____ ____ ____  \r\n/ ___|| | | |/ ___/ ___| ____/ ___/ ___| \r\n\\___ \\| | | | |  | |   |  _| \\___ \\___ \\ \r\n ___) | |_| | |__| |___| |___ ___) |__) |\r\n|____/ \\___/ \\____\\____|_____|____/____/ \r\n\r\nA U T 0 - C 0 N J U G U 3 M 0 S\r\n - open issues here https://github.com/listingclown3/auto-conjuguemos\r\n - no information is collected at all\r\n - instructions listed in the GitHub\r\n - suggestions are encouraged!\r\n \r\n";
+                    const outputElement = document.getElementById('output');
+                    outputElement.innerHTML = '';
+
+                    const infoText = document.createElement('div');
+                    infoText.textContent = "Beginning authentication step.\nAuthentication step complete.\nBeginning score addition step.\nScore added.\n";
+                    outputElement.appendChild(infoText);
+
+                    const asciiArt = document.createElement('pre');
+                    asciiArt.textContent = " ____  _   _  ____ ____ _____ ____ ____  \r\n/ ___|| | | |/ ___/ ___| ____/ ___/ ___| \r\n\\___ \\| | | | |  | |   |  _| \\___ \\___ \\ \r\n ___) | |_| | |__| |___| |___ ___) |__) |\r\n|____/ \\___/ \\____\\____|_____|____/____/ \r\n\r\nA U T 0 - C 0 N J U G U 3 M 0 S\r\n";
+                    outputElement.appendChild(asciiArt);
+
+                    const checkLink = document.createElement('div');
+                    checkLink.innerHTML = 'Check your new grades - <a href="https://conjuguemos.com/student/grades" target="_blank">here</a>';
+                    outputElement.appendChild(checkLink);
+
+                    const issueLink = document.createElement('div');
+                    issueLink.innerHTML = '\n- open issues <a href="https://github.com/listingclown3/auto-conjuguemos" target="_blank">here</a>';
+                    outputElement.appendChild(issueLink);
+
+                    const otherInfo = document.createElement('div');
+                    otherInfo.textContent = "- no information is collected at all\r\n - instructions listed in the GitHub\r\n - suggestions are encouraged!\r\n";
+                    outputElement.appendChild(otherInfo);
+
                 }
             })
             .catch(error => {
