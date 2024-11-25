@@ -1,3 +1,6 @@
+# notice of end of life
+- the api used to contact conjuguemos doesn't work anymore, more solutions will be found. In the mean time, this page no longer works.
+
 # auto-conjuguemos
 
 Courtesy of [a2435191](https://github.com/a2435191) for providing the basis of the script. This is an extension of the public script to make it more user-friendly.
